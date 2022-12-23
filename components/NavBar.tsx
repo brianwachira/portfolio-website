@@ -7,8 +7,8 @@ const NavBar = () => {
 
 
 	return (
-		<nav className="bg-pw-blue px-2 sm:px-4 dark:bg-pw-blue fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-			<div className="container flex flex-wrap items-center justify-between mx-auto">
+		<nav className="px-2 sm:px-4 fixed w-full z-20 top-0 left-0 ">
+			<div className="container flex flex-wrap items-center justify-between">
 				<div className="flex md:order-2">
 					<button
 						data-collapse-toggle="navbar-sticky"
@@ -37,7 +37,7 @@ const NavBar = () => {
 					className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
 					id="navbar-sticky"
 				>
-					<ul className=" items-center flex flex-col mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 dark:bg-pw-blue md:dark:bg-pw-blue">
+					<ul className="lg:px-12 items-center flex flex-col mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
 						{Routes.map((route) => (
 							<li key={route.href}>
                                 {router.pathname === route.href ? 
