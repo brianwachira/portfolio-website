@@ -8,7 +8,7 @@ const NavBar = () => {
 
 	return (
 		<nav className="px-2 sm:px-4 fixed w-full z-20 top-0 left-0 ">
-			<div className="container flex flex-wrap items-center justify-between">
+			<div className="xl:mx-auto container flex flex-wrap items-center justify-between">
 				<div className="flex md:order-2">
 					<button
 						data-collapse-toggle="navbar-sticky"
