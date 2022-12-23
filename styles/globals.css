@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+  }
+
 @font-face {
   font-family: 'SPARTAN-REGULAR';
   src: url("/fonts/Spartan-Regular.ttf");
