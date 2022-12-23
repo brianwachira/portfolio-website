@@ -21,3 +21,13 @@
   font-family: 'SPARTAN-BOLD';
   src: url("/fonts/Spartan-Bold.ttf");
 }
+
+@font-face {
+  font-family: 'SPARTAN-EXTRABOLD';
+  src: url("/fonts/Spartan-ExtraBold.ttf");
+}
+
+.stroke-text{
+  -webkit-text-stroke: 1.5px white;
+  -webkit-text-fill-color:transparent;
+}
