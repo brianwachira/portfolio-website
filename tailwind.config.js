@@ -11,6 +11,7 @@ module.exports = {
         spartanMedium: ['SPARTAN-MEDIUM'],
         spartanSemiBold: ['SPARTAN-SEMIBOLD'],
         spartanBold: ['SPARTAN-BOLD'],
+        spartanExtraBold: ['SPARTAN-EXTRABOLD'],
       },
       colors: {
         'pw-blue': '#000C24',
