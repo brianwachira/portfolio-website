@@ -102,7 +102,7 @@ export default function Home() {
 					</div>
 				</div>
 			</main>
-			<main className="bg-[url('/images/experienceBackground.svg')] bg-right h-full bg-contain bg-no-repeat">
+			<main className="bg-[url('/images/experienceBackground.svg')] bg-right bg-cover bg-no-repeat">
 				<div
 					id="experience"
 					className="container xl:mx-auto grid h-screen py-20 lg:px-20"
