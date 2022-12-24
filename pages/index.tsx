@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
+import SectionSkills from "../components/sections/SectionSkills";
 import { Experience } from "../constants/Experience";
 import { SocialMediaProfile } from "../constants/SocialMediaProfile";
 
@@ -15,9 +16,9 @@ export default function Home() {
 			</Head>
 			<main className="bg-[url('/images/landing-bg.svg')] -mt-28 bg-cover bg-no-repeat">
 				<NavBar />
-				<div className="container xl:mx-auto grid h-[calc(100vh)] mt-28">
+				<div className="container lg:mx-auto grid h-[calc(100vh)] mt-28">
 					<div className="grid self-start"></div>
-					<div className="mx-auto grid-self-center mt-36 lg:px-20 container">
+					<div className="mx-auto grid-self-center mt-36 xl:px-20 container">
 						<h3 className=" font-spartanExtraBold text-4xl stroke-text">
 							Brian Wachira
 						</h3>
@@ -41,7 +42,7 @@ export default function Home() {
 							))}
 						</div>
 					</div>
-					<div className="grid self-end lg:px-20 container">
+					<div className="grid self-end xl:px-20 container">
 						<div className="flex items-center my-8">
 							<img
 								src="/icons/arrow-down-icon.svg"
@@ -56,26 +57,26 @@ export default function Home() {
 				</div>
 				<div
 					id="about"
-					className="container xl:mx-auto grid h-screen py-20 lg:px-20"
+					className="container lg:mx-auto grid min-h-screen py-20 xl:px-20"
 				>
 					<div className="grid self-start"></div>
 
-					<div className="grid self-center grid-cols-2 gap-x-28">
+					<div className="grid self-center grid-cols-2 gap-x-14">
 						<div className="relative">
 							<img
 								src="/images/net-bg.svg"
 								alt="net-bg"
 								className="animate-pulse -top-9 absolute"
 							/>
-							<div className="relative grayscale pl-9">
+							<div className="relative grayscale">
 								<img
-									className="max-w-md h-[653px] mr-auto"
-									src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
+									className="max-w-md h-[653px] ml-auto xl:ml-9"
+									src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03fdb466-60c7-4df2-8aeb-8f9f008d2afa/db8o23g-c69fffc4-ad01-4d0a-8add-832de1a26de7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZmRiNDY2LTYwYzctNGRmMi04YWViLThmOWYwMDhkMmFmYVwvZGI4bzIzZy1jNjlmZmZjNC1hZDAxLTRkMGEtOGFkZC04MzJkZTFhMjZkZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u2KXFJm5O_QWDqHAScT-QTWe_pwrUaCubl4UMxl1Gw0"
 									alt="gif"
 								/>
 							</div>
 						</div>
-						<div className="pl-9 grid self-center">
+						<div className="grid self-center">
 							<h5 className="text-pw-orange font-spartanBold text-3xl mb-8">
 								About Me.
 							</h5>
@@ -105,7 +106,7 @@ export default function Home() {
 			<main className="bg-[url('/images/experienceBackground.svg')] bg-right bg-cover bg-no-repeat">
 				<div
 					id="experience"
-					className="container xl:mx-auto grid h-screen py-20 lg:px-20"
+					className="container lg:mx-auto grid h-screen py-20 xl:px-20"
 				>
 					<div className="grid self-start" />
 					<div className="grid self-center">
@@ -147,6 +148,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+				<SectionSkills/>
 			</main>
 		</>
 	);
