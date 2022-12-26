@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
+import SectionProjects from "../components/sections/SectionProjects";
 import SectionSkills from "../components/sections/SectionSkills";
+import BtnScroll from "../components/shared-ui/BtnScroll";
 import { Experience } from "../constants/Experience";
 import { SocialMediaProfile } from "../constants/SocialMediaProfile";
 
@@ -43,16 +45,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="grid self-end xl:px-20 container">
-						<div className="flex items-center my-8">
-							<img
-								src="/icons/arrow-down-icon.svg"
-								alt="arrow-icon-down"
-								className="animate-pulse mr-2"
-							/>
-							<span className=" text-xs font-spartanMedium text-pw-grey">
-								Scroll
-							</span>
-						</div>
+						<BtnScroll light/>
 					</div>
 				</div>
 				<div
@@ -70,7 +63,7 @@ export default function Home() {
 							/>
 							<div className="relative grayscale">
 								<img
-									className="max-w-md h-[653px] ml-auto xl:ml-9"
+									className="max-w-md h-[70vh] ml-auto xl:ml-9"
 									src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03fdb466-60c7-4df2-8aeb-8f9f008d2afa/db8o23g-c69fffc4-ad01-4d0a-8add-832de1a26de7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZmRiNDY2LTYwYzctNGRmMi04YWViLThmOWYwMDhkMmFmYVwvZGI4bzIzZy1jNjlmZmZjNC1hZDAxLTRkMGEtOGFkZC04MzJkZTFhMjZkZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u2KXFJm5O_QWDqHAScT-QTWe_pwrUaCubl4UMxl1Gw0"
 									alt="gif"
 								/>
@@ -80,7 +73,7 @@ export default function Home() {
 							<h5 className="text-pw-orange font-spartanBold text-3xl mb-8">
 								About Me.
 							</h5>
-							<p className="text-pw-blue font-spartanRegular text-2xl -mr-9">
+							<p className="text-pw-blue font-spartanRegular text-2xl">
 								With a passion for technology and a focus on continuous
 								learning, I am a software engineer with expertise in JavaScript
 								and a willingness to explore new technologies. I am a proactive
@@ -90,16 +83,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="grid self-end">
-						<div className="flex items-center my-8">
-							<img
-								src="/icons/arrow-down-blue-icon.svg"
-								alt="arrow-icon-down"
-								className="animate-pulse mr-2"
-							/>
-							<span className=" text-xs font-spartanMedium text-pw-blue">
-								Scroll
-							</span>
-						</div>
+						<BtnScroll/>
 					</div>
 				</div>
 			</main>
@@ -136,19 +120,13 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="grid self-end">
-						<div className="flex items-center my-8">
-							<img
-								src="/icons/arrow-down-blue-icon.svg"
-								alt="arrow-icon-down"
-								className="animate-pulse mr-2"
-							/>
-							<span className=" text-xs font-spartanMedium text-pw-blue">
-								Scroll
-							</span>
-						</div>
+						<BtnScroll/>
 					</div>
 				</div>
 				<SectionSkills/>
+			</main>
+			<main className="bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat">
+				<SectionProjects/>
 			</main>
 		</>
 	);

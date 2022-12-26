@@ -36,3 +36,58 @@ html {
   -webkit-text-stroke: 1.5px white;
   -webkit-text-fill-color:transparent;
 }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "" !important;
+}
+
+.swiper-button-next {
+  background-image: url("/icons/slider-next.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 100px !important;
+  height: 64px !important;
+  right: auto !important;
+  left: 389px !important;
+}
+
+.swiper-button-prev {
+  background-image: url("/icons/slider-previous.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 100px;
+  width: 100px !important;
+  height: 64px !important;
+  left: 30px !important;
+}
+
+.swiper-button-next:hover {
+  background-image: url("/icons/slider-next-hover.svg");
+  transition-duration: 300ms;
+  transition-delay: 150ms;
+}
+
+.swiper-button-prev:hover {
+  background-image: url("/icons/slider-previous-hover.svg");
+  transition-duration: 300ms;
+  transition-delay: 150ms;
+}
+.swiper-pagination-bullet {
+  width: 20% !important;
+  height: 4px !important;
+  border-radius: 0px !important;
+}
+.swiper-pagination-bullet-active{
+  background: #000C24 !important;
+}
+.swiper-pagination{
+  text-align: left !important;
+}
+.swiper-pagination-bullets{
+  bottom: 4vh !important;
+  left: unset !important;
+  right: 0 !important;
+  width: 47.5% !important;
+}
