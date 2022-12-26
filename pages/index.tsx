@@ -45,16 +45,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="grid self-end xl:px-20 container">
-						<div className="flex items-center my-8">
-							<img
-								src="/icons/arrow-down-icon.svg"
-								alt="arrow-icon-down"
-								className="animate-pulse mr-2"
-							/>
-							<span className=" text-xs font-spartanMedium text-pw-grey">
-								Scroll
-							</span>
-						</div>
+						<BtnScroll light/>
 					</div>
 				</div>
 				<div
@@ -134,7 +125,9 @@ export default function Home() {
 				</div>
 				<SectionSkills/>
 			</main>
-			<SectionProjects/>
+			<main className="bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat">
+				<SectionProjects/>
+			</main>
 		</>
 	);
 }
