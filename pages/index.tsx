@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
+import SectionContact from "../components/sections/SectionContact";
 import SectionProjects from "../components/sections/SectionProjects";
 import SectionSkills from "../components/sections/SectionSkills";
 import BtnScroll from "../components/shared-ui/BtnScroll";
@@ -127,6 +128,9 @@ export default function Home() {
 			</main>
 			<main className="bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat">
 				<SectionProjects/>
+			</main>
+			<main className="bg-[url('/images/contactus-background.svg')] bg-cover py-20 xl:px-20">
+				<SectionContact/>
 			</main>
 		</>
 	);
