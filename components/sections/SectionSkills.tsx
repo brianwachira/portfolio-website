@@ -30,7 +30,7 @@ const SectionSkills = () => {
 										key={category.id}
 										className={({ selected }) =>
 											classNames(
-												"w-full rounded py-2.5 text-sm font-medium font-spartanMedium text-pw-grey",
+												"w-full rounded py-2.5 text-sm font-medium font-spartanMedium",
 												"ring-white ring-opacity-60 ring-offset-2 ring-offset-pw-orange focus:outline-none focus:ring-2",
 												selected
 													? "text-pw-orange bg-white shadow"

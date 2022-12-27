@@ -5,6 +5,11 @@ export const SocialMediaProfile = [
         icon: "/icons/github-filled.svg"
     },
     {
+        name: 'Behance',
+        href: "https://www.behance.net/brianwachira",
+        icon: "/icons/BehanceCircleFilled.svg"
+    },
+    {
         name: 'LinkedIn',
         href: "https://www.linkedin.com/in/brianwachira/",
         icon: "/icons/linkedin-with-circle.svg"

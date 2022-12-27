@@ -53,7 +53,7 @@ const SectionContact = () => {
 								Message
 							</label>
 						</div>
-						<button className=" py-4 px-6 bg-pw-blue text-white font-spartanMedium text-base rounded  transition delay-150 duration-300 ease-in-out hover:bg-pw-orange">
+						<button className=" py-4 px-6 bg-pw-blue text-white font-spartanMedium text-base rounded  transition delay-150 duration-300 ease-in-out hover:bg-pw-orange ring-pw-orange ring-opacity-60 ring-offset-2 ring-offset-pw-blue focus:outline-none focus:ring-2">
 							Send Message
 						</button>
 					</form>
