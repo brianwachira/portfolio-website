@@ -7,13 +7,13 @@ const SectionLanding = () => {
 		<div className="container lg:mx-auto grid h-[calc(100vh)] mt-28">
 			<div className="grid self-start"></div>
 			<div className="mx-auto grid-self-center mt-36 xl:px-20 container">
-				<h3 className=" font-spartanExtraBold text-4xl stroke-text">
+				<h3 className=" font-spartanExtraBold text-4xl stroke-text text-center lg:text-left">
 					Brian Wachira
 				</h3>
-				<h5 className="font-spartanSemiBold text-2xl text-white my-4">
+				<h5 className="font-spartanSemiBold text-2xl text-white my-4 text-center lg:text-left">
 					Software Engineer
 				</h5>
-				<div className="inline-flex">
+				<div className="flex justify-center lg:justify-start">
 					{SocialMediaProfile.map((profile) => (
 						<Link
 							key={profile.name}
