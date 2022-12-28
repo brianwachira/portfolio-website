@@ -20,7 +20,7 @@ const SectionProjects = () => {
 			id="projects"
 			className="bg-white lg:bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat"
 		>
-			<main className="container lg:mx-auto grid lg:min-h-screen p-4 xl:py-20 xl:px-20">
+			<main className="container md:mx-auto grid lg:min-h-screen px-4 py-4 md:px-0 md:py-10 xl:py-20 xl:px-20">
 				<div className="grid self-start" />
 				<h5 className="lg:hidden text-pw-orange font-spartanBold text-2xl lg:text-3xl  lg:mb-6 text-center lg:text-left">
 					{title}
@@ -39,7 +39,7 @@ const SectionProjects = () => {
 					{projects.map((project) => (
 						<SwiperSlide
 							key={project.id}
-							className="grid self-center lg:grid-cols-2 gap-x-14 pt-6 lg:pt-12"
+							className="grid self-center md:grid-cols-2 gap-x-14 pt-6 lg:pt-12"
 						>
 							<div className="relative">
 								<img
@@ -60,13 +60,13 @@ const SectionProjects = () => {
 									<h5 className="hidden lg:block text-pw-orange font-spartanBold text-2xl lg:text-3xl mb-3 lg:mb-6 text-center lg:text-left">
 										{title}
 									</h5>
-									<h5 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center lg:text-left">
+									<h5 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center md:text-left">
 										{project.title}
 									</h5>
-									<p className="text-pw-blue font-spartanRegular text-base lg:text-2xl mb-3 lg:mb-6 text-center lg:text-left">
+									<p className="text-pw-blue font-spartanRegular text-base lg:text-2xl mb-3 lg:mb-6 text-center md:text-left">
 										{project.description}
 									</p>
-									<div className="flex flex-wrap mb-3 lg:mb-6 justify-center lg:justify-start">
+									<div className="flex flex-wrap mb-3 lg:mb-6 justify-center md:justify-start">
 										{project.techStack.map((stack) => (
 											<span
 												key={stack.id}
@@ -76,7 +76,7 @@ const SectionProjects = () => {
 											</span>
 										))}
 									</div>
-									<div className="inline-flex justify-center lg:justify-start">
+									<div className="inline-flex justify-center md:justify-start">
 										<Link
 											href={project.githubLink}
 											target="_blank"
