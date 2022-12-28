@@ -8,8 +8,8 @@ const SectionAbout = () => {
 		>
 			<div className="grid self-start"></div>
 
-			<div className=" snap-center grid self-center lg:grid-cols-2 gap-x-14">
-				<div className="relative order-last lg:order-1">
+			<div className=" snap-center grid self-center md:grid-cols-2 lg:grid-cols-2 lg:gap-x-14">
+				<div className="relative order-last md:order-1">
 					<img
 						src="/images/net-bg.svg"
 						alt="net-bg"
@@ -23,11 +23,11 @@ const SectionAbout = () => {
 						/>
 					</div>
 				</div>
-				<div className="grid self-center mb-14 lg:order-2">
-					<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mb-4 xl:mb-8 text-center lg:text-left">
+				<div className="grid self-center mb-14 md:order-2">
+					<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mb-4 xl:mb-8 text-center md:text-left">
 						About Me.
 					</h5>
-					<p className="text-pw-grey lg:text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 lg:px-0 text-center lg:text-left">
+					<p className="text-pw-grey lg:text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 md:px-0 text-center md:text-left">
 						With a passion for technology and a focus on continuous learning, I
 						am a software engineer with expertise in JavaScript and a
 						willingness to explore new technologies. I am a proactive

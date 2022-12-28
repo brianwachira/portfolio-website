@@ -4,7 +4,7 @@ const SectionContact = () => {
 			id="contact"
 			className="bg-[url('/images/contactus-background.svg')] bg-cover p-4 xl:py-20 xl:px-20"
 		>
-			<main className="bg-white container lg:mx-auto grid rounded">
+			<main className="bg-white container md:mx-auto grid rounded">
 				<div className="p-4 lg:p-9 grid lg:grid-cols-2 gap-x-14">
 					<div className="grid self-center">
 						<h5 className=" font-spartanSemiBold text-pw-blue text-2xl lg:text-4xl mb-2 lg:mb-0 text-center lg:text-left">

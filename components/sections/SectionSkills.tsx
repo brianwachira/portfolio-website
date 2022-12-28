@@ -12,17 +12,19 @@ const SectionSkills = () => {
 	return (
 		<section
 			id="skills"
-			className="container lg:mx-auto grid lg:h-screen xl:py-20 xl:px-20"
+			className="container mx-auto grid lg:h-screen xl:py-20 xl:px-20"
 		>
 			<div className="grid lg:grid-cols-2 gap-x-14">
-				<div>
-					<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mb-4 xl:mb-8 text-center lg:text-left">
-						{title}
-					</h5>
-					<p className="text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 text-center lg:text-left">
-						{description}
-					</p>
-					<div className="w-full px-2 py-8 sm:px-0">
+				<div className="md:grid md:grid-cols-2 md:gap-x-4 lg:block">
+					<div className="md:grid md:self-center">
+						<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mx-4 md:mx-0 xl:mb-8 text-center md:text-left">
+							{title}
+						</h5>
+						<p className="text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 md:px-0 text-center md:text-left">
+							{description}
+						</p>
+					</div>
+					<div className="w-full mx-auto py-8 md:py-4 sm:px-0">
 						<Tab.Group>
 							<Tab.List className="flex space-x-1 rounded bg-pw-blue p-1">
 								{expertise.map((category) => (
@@ -96,7 +98,7 @@ const SectionSkills = () => {
 				</div>
 			</div>
 			<div className="hidden lg:grid self-end">
-				<BtnScroll/>
+				<BtnScroll />
 			</div>
 		</section>
 	);
