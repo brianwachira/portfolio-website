@@ -10,16 +10,16 @@ const SectionSkills = () => {
 	const { title, description, expertise } = SkillsContent;
 
 	return (
-		<div
+		<section
 			id="skills"
-			className="container lg:mx-auto grid h-screen py-20 xl:px-20"
+			className="container lg:mx-auto grid lg:h-screen xl:py-20 xl:px-20"
 		>
-			<div className="grid grid-cols-2 gap-x-14">
+			<div className="grid lg:grid-cols-2 gap-x-14">
 				<div>
-					<h5 className="text-pw-orange font-spartanBold text-3xl mb-8">
+					<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mb-4 xl:mb-8 text-center lg:text-left">
 						{title}
 					</h5>
-					<p className="text-pw-blue font-spartanRegular text-2xl">
+					<p className="text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 text-center lg:text-left">
 						{description}
 					</p>
 					<div className="w-full px-2 py-8 sm:px-0">
@@ -30,7 +30,7 @@ const SectionSkills = () => {
 										key={category.id}
 										className={({ selected }) =>
 											classNames(
-												"w-full rounded py-2.5 text-sm font-medium font-spartanMedium",
+												"w-full rounded py-2.5 text-xs lg:text-sm font-medium font-spartanMedium",
 												"ring-white ring-opacity-60 ring-offset-2 ring-offset-pw-orange focus:outline-none focus:ring-2",
 												selected
 													? "text-pw-orange bg-white shadow"
@@ -61,7 +61,7 @@ const SectionSkills = () => {
 														src={item.icon}
 														className="w-10 h-10 mx-auto mb-2 animate-pulse"
 													/>
-													<h3 className="text-sm font-spartanSemiBold text-pw-blue text-center">
+													<h3 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center">
 														{item.name}
 													</h3>
 													<a
@@ -80,7 +80,7 @@ const SectionSkills = () => {
 						</Tab.Group>
 					</div>
 				</div>
-				<div className="relative grid self-center">
+				<div className="relative hidden lg:grid self-center">
 					<img
 						src="/images/net-bg.svg"
 						alt="net-bg"
@@ -88,17 +88,17 @@ const SectionSkills = () => {
 					/>
 					<div className="relative grayscale">
 						<img
-							className="max-w-md h-[70vh] xl:ml-auto"
+							className="max-w-xs lg:max-w-md lg:h-[70vh] xl:ml-auto"
 							src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
 							alt="gif"
 						/>
 					</div>
 				</div>
 			</div>
-			<div className="grid self-end">
+			<div className="hidden lg:grid self-end">
 				<BtnScroll/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

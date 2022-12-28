@@ -18,10 +18,13 @@ const SectionProjects = () => {
 	return (
 		<section
 			id="projects"
-			className="bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat"
+			className="bg-white lg:bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat"
 		>
-			<main className="container lg:mx-auto grid min-h-screen py-20 xl:px-20">
+			<main className="container lg:mx-auto grid lg:min-h-screen p-4 xl:py-20 xl:px-20">
 				<div className="grid self-start" />
+				<h5 className="lg:hidden text-pw-orange font-spartanBold text-2xl lg:text-3xl  lg:mb-6 text-center lg:text-left">
+					{title}
+				</h5>
 				<Swiper
 					slidesPerView={"auto"}
 					autoplay={{
@@ -30,12 +33,13 @@ const SectionProjects = () => {
 					}}
 					navigation
 					pagination
-					modules={[Autoplay, Navigation, Pagination]}
+					modules={[Navigation, Pagination]}
+					className="w-full "
 				>
 					{projects.map((project) => (
 						<SwiperSlide
 							key={project.id}
-							className="grid self-center grid-cols-2 gap-x-14 pt-12"
+							className="grid self-center lg:grid-cols-2 gap-x-14 pt-6 lg:pt-12"
 						>
 							<div className="relative">
 								<img
@@ -45,7 +49,7 @@ const SectionProjects = () => {
 								/>
 								<div className="relative grayscale">
 									<img
-										className="max-w-md h-[70vh] ml-auto xl:ml-9"
+										className="mx-auto max-w-xs lg:max-w-md lg:h-[70vh] lg:ml-auto xl:ml-9"
 										src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03fdb466-60c7-4df2-8aeb-8f9f008d2afa/db8o23g-c69fffc4-ad01-4d0a-8add-832de1a26de7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZmRiNDY2LTYwYzctNGRmMi04YWViLThmOWYwMDhkMmFmYVwvZGI4bzIzZy1jNjlmZmZjNC1hZDAxLTRkMGEtOGFkZC04MzJkZTFhMjZkZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u2KXFJm5O_QWDqHAScT-QTWe_pwrUaCubl4UMxl1Gw0"
 										alt="gif"
 									/>
@@ -53,26 +57,26 @@ const SectionProjects = () => {
 							</div>
 							<div className="grid">
 								<div className="grid self-center">
-									<h5 className="text-pw-orange font-spartanBold text-3xl mb-6 ">
+									<h5 className="hidden lg:block text-pw-orange font-spartanBold text-2xl lg:text-3xl mb-3 lg:mb-6 text-center lg:text-left">
 										{title}
 									</h5>
-									<h5 className=" text-pw-orange font-spartanSemiBold text-2xl mb-6">
+									<h5 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center lg:text-left">
 										{project.title}
 									</h5>
-									<p className="text-pw-blue font-spartanRegular text-2xl mb-6">
+									<p className="text-pw-blue font-spartanRegular text-base lg:text-2xl mb-3 lg:mb-6 text-center lg:text-left">
 										{project.description}
 									</p>
-									<div className="flex flex-wrap mb-6">
+									<div className="flex flex-wrap mb-3 lg:mb-6 justify-center lg:justify-start">
 										{project.techStack.map((stack) => (
 											<span
 												key={stack.id}
-												className="cursor-pointer py-2 px-3 bg-pw-grey text-sm font-spartanMedium text-white rounded mr-4 transition delay-150 duration-300 ease-in-out hover:bg-pw-orange"
+												className="cursor-pointer py-2 px-3 bg-pw-grey text-sm font-spartanMedium text-white rounded mr-4 transition delay-150 duration-300 ease-in-out hover:bg-pw-orange mb-3 lg:mb-0"
 											>
 												{stack.stack}
 											</span>
 										))}
 									</div>
-									<div className="inline-flex">
+									<div className="inline-flex justify-center lg:justify-start">
 										<Link
 											href={project.githubLink}
 											target="_blank"
@@ -114,7 +118,7 @@ const SectionProjects = () => {
 						</SwiperSlide>
 					))}
 				</Swiper>
-				<div className="grid self-end">
+				<div className="hidden lg:grid self-end">
 					<BtnScroll light />
 				</div>
 			</main>

@@ -8,7 +8,7 @@ const BtnScroll = (props: IBtnScrollProps) => {
 		<>
             {light ? 
             <>
-            <div className="flex items-center my-8">
+            <div className="flex justify-center lg:justify-start items-center my-8">
                 <img
                     src="/icons/arrow-down-icon.svg"
                     alt="arrow-icon-down"
@@ -18,7 +18,7 @@ const BtnScroll = (props: IBtnScrollProps) => {
                     Scroll
                 </span>
             </div></>:<>
-			<div className="flex items-center my-8">
+			<div className="flex justify-center lg:justify-start items-center my-4 lg:my-8">
 				<img
 					src="/icons/arrow-down-blue-icon.svg"
 					alt="arrow-icon-down"

@@ -17,12 +17,12 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="bg-[url('/images/landing-bg.svg')] -mt-28 bg-cover bg-no-repeat">
+			<main className="bg-pw-blue lg:bg-white  lg:bg-[url('/images/landing-bg.svg')] -mt-28 bg-cover bg-no-repeat">
 				<NavBar />
 				<SectionLanding/>
 				<SectionAbout/>
 			</main>
-			<main className="bg-[url('/images/experienceBackground.svg')] bg-right bg-cover bg-no-repeat">
+			<main className="lg:bg-[url('/images/experienceBackground.svg')] bg-right bg-cover bg-no-repeat">
 				<SectionExperience/>
 				<SectionSkills />
 			</main>
