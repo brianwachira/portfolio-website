@@ -98,6 +98,16 @@ html {
 @media (min-width: 640px) {
 }
 @media (min-width: 768px) {
+
+  .swiper-button-next {
+    top: 50% !important;
+    left: 290px !important;
+  }
+  
+  .swiper-button-prev {
+    top: 50% !important;
+    left: 15px !important;
+  }
 }
 @media (min-width: 1024px) {
 
@@ -109,7 +119,7 @@ html {
     width: 100px !important;
     height: 64px !important;
     right: auto !important;
-    left: 389px !important;
+    left: 298px !important;
     top: 50% !important;
   }
   
@@ -121,7 +131,7 @@ html {
     width: 100px;
     width: 100px !important;
     height: 64px !important;
-    left: 30px !important;
+    left: 5px !important;
     top: 50% !important;
   }
 
@@ -156,6 +166,30 @@ html {
   }
 }
 @media (min-width: 1280px) {
+
+  .swiper-button-next {
+    background-image: url("/icons/slider-next.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100px !important;
+    height: 64px !important;
+    right: auto !important;
+    left: 389px !important;
+    top: 50% !important;
+  }
+  
+  .swiper-button-prev {
+    background-image: url("/icons/slider-previous.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100px;
+    width: 100px !important;
+    height: 64px !important;
+    left: 30px !important;
+    top: 50% !important;
+  }
 }
 @media (min-width: 1536px) {
 }

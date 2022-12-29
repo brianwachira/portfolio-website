@@ -8,7 +8,7 @@ const NavBar = () => {
 	const scrollPosition = useScrollPosition()
 	return (
 		<nav className={`px-2 sm:px-4 fixed w-full z-20 top-0 left-0  transition delay-150 duration-300 ease-in-out ${scrollPosition > 500 ? 'bg-pw-blue' : ''}`}>
-			<div className="xl:mx-auto container flex flex-wrap items-center justify-between">
+			<div className="lg:mx-auto container flex flex-wrap items-center justify-between">
 				<div className="flex md:order-2">
 					<button
 						data-collapse-toggle="navbar-sticky"

@@ -2,7 +2,7 @@ const SectionContact = () => {
 	return (
 		<section
 			id="contact"
-			className="bg-[url('/images/contactus-background.svg')] bg-cover p-4 xl:py-20 xl:px-20"
+			className="bg-[url('/images/contactus-background.svg')] bg-cover p-4 lg:py-20 lg:px-20"
 		>
 			<main className="bg-white container md:mx-auto grid rounded">
 				<div className="p-4 lg:p-9 grid lg:grid-cols-2 gap-x-14">
