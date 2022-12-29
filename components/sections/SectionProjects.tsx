@@ -18,11 +18,11 @@ const SectionProjects = () => {
 	return (
 		<section
 			id="projects"
-			className="bg-white lg:bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat"
+			className="bg-white xl:bg-[url('/images/projects-bottom-image.svg')] bg-left bg-contain bg-no-repeat"
 		>
-			<main className="container md:mx-auto grid lg:min-h-screen px-4 py-4 md:px-0 md:py-10 xl:py-20 xl:px-20">
+			<main className="container md:mx-auto grid lg:min-h-screen px-4 py-4 md:px-0 md:py-10 xl:py-20 lg:px-20">
 				<div className="grid self-start" />
-				<h5 className="lg:hidden text-pw-orange font-spartanBold text-2xl lg:text-3xl  lg:mb-6 text-center lg:text-left">
+				<h5 className="lg:hidden text-pw-orange font-spartanBold text-2xl lg:text-3xl lg:mb-6 text-center md:text-left md:px-4">
 					{title}
 				</h5>
 				<Swiper
@@ -49,7 +49,7 @@ const SectionProjects = () => {
 								/>
 								<div className="relative grayscale">
 									<img
-										className="mx-auto max-w-xs lg:max-w-md lg:h-[70vh] lg:ml-auto xl:ml-9"
+										className="mx-auto max-w-xs lg:max-w-sm xl:max-w-md  md:h-[30vh] lg:h-[70vh] lg:ml-auto xl:ml-9"
 										src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03fdb466-60c7-4df2-8aeb-8f9f008d2afa/db8o23g-c69fffc4-ad01-4d0a-8add-832de1a26de7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZmRiNDY2LTYwYzctNGRmMi04YWViLThmOWYwMDhkMmFmYVwvZGI4bzIzZy1jNjlmZmZjNC1hZDAxLTRkMGEtOGFkZC04MzJkZTFhMjZkZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u2KXFJm5O_QWDqHAScT-QTWe_pwrUaCubl4UMxl1Gw0"
 										alt="gif"
 									/>

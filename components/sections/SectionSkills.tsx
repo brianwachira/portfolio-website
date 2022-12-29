@@ -12,11 +12,11 @@ const SectionSkills = () => {
 	return (
 		<section
 			id="skills"
-			className="container mx-auto grid lg:h-screen xl:py-20 xl:px-20"
+			className="container mx-auto grid lg:h-screen md:px-4 xl:py-20 lg:px-20"
 		>
 			<div className="grid lg:grid-cols-2 gap-x-14">
 				<div className="md:grid md:grid-cols-2 md:gap-x-4 lg:block">
-					<div className="md:grid md:self-center">
+					<div className="md:grid md:self-start lg:self-start">
 						<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mx-4 md:mx-0 xl:mb-8 text-center md:text-left">
 							{title}
 						</h5>
@@ -24,7 +24,7 @@ const SectionSkills = () => {
 							{description}
 						</p>
 					</div>
-					<div className="w-full mx-auto py-8 md:py-4 sm:px-0">
+					<div className="w-full mx-auto py-8 md:py-4 px-4 sm:px-0">
 						<Tab.Group>
 							<Tab.List className="flex space-x-1 rounded bg-pw-blue p-1">
 								{expertise.map((category) => (
@@ -90,7 +90,7 @@ const SectionSkills = () => {
 					/>
 					<div className="relative grayscale">
 						<img
-							className="max-w-xs lg:max-w-md lg:h-[70vh] xl:ml-auto"
+							className="max-w-xs lg:max-w-sm xl:max-w-md md:h-[30vh] lg:h-[40vh] xl:h-[70vh] xl:ml-auto"
 							src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
 							alt="gif"
 						/>
