@@ -1,4 +1,27 @@
+import React from "react";
+
 const SectionContact = () => {
+
+	const handleOnSubmit = (event : React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault()
+
+		const formData= {};
+
+		Array.from(event.currentTarget.elements).forEach(field => {
+			if(!field.name) return;
+			formData[field.name] = field.value;
+		});
+
+		fetch('/api/contact',{
+			method: 'POST',
+			body: JSON.stringify(formData)
+		}).then(response => response.json())
+		.then(data => {
+			alert('Thank you for getting in touch. I will get back')
+		}).catch((error) => {
+			alert(error)
+		})
+	}
 	return (
 		<section
 			id="contact"
@@ -12,7 +35,7 @@ const SectionContact = () => {
 							<br />I would love to hear from you!
 						</h5>
 					</div>
-					<form className=" space-y-6">
+					<form method="post" onSubmit={handleOnSubmit} className="space-y-6">
 						<h5 className=" font-spartanBold text-pw-orange text-2xl xl:text-3xl mb-4 xl:mb-8 text-center lg:text-left">
 							Get in touch
 						</h5>
@@ -20,8 +43,10 @@ const SectionContact = () => {
 							<input
 								type="text"
 								id="name"
+								name="name"
 								className="block px-2.5 py-2.5 w-full text-base lg:text-xl text-pw-blue bg-transparent rounded border border-pw-blue appearance-none focus:outline-none focus:ring-0 focus:border-pw-orange peer"
 								placeholder=" "
+								required
 							/>
 							<label
 								htmlFor="name"
@@ -34,8 +59,10 @@ const SectionContact = () => {
 							<input
 								type="text"
 								id="email"
+								name="email"
 								className="block px-2.5 py-2.5 w-full text-base lg:text-xl text-pw-blue bg-transparent rounded border border-pw-blue appearance-none focus:outline-none focus:ring-0 focus:border-pw-orange peer"
 								placeholder=" "
+								required
 							/>
 							<label
 								htmlFor="email"
@@ -48,6 +75,9 @@ const SectionContact = () => {
 							<textarea
 								className="block px-2.5 py-2.5 w-full text-base lg:text-xl text-pw-blue bg-transparent rounded border border-pw-blue appearance-none focus:outline-none focus:ring-0 focus:border-pw-orange peer"
 								placeholder=" "
+								id="message"
+								name="message"
+								required
 							/>
 							<label
 								htmlFor="email"
@@ -57,7 +87,10 @@ const SectionContact = () => {
 							</label>
 						</div>
 						<div className="flex justify-center lg:justify-start">
-							<button className=" py-4 px-6 bg-pw-blue text-white font-spartanMedium text-sm lg:text-base rounded  transition delay-150 duration-300 ease-in-out hover:bg-pw-orange ring-pw-orange ring-opacity-60 ring-offset-2 ring-offset-pw-blue focus:outline-none focus:ring-2">
+							<button
+								type="submit"
+								className=" py-4 px-6 bg-pw-blue text-white font-spartanMedium text-sm lg:text-base rounded  transition delay-150 duration-300 ease-in-out hover:bg-pw-orange ring-pw-orange ring-opacity-60 ring-offset-2 ring-offset-pw-blue focus:outline-none focus:ring-2"
+							>
 								Send Message
 							</button>
 						</div>
