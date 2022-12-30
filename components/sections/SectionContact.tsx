@@ -2,15 +2,24 @@ import React from "react";
 
 const SectionContact = () => {
 
-	const handleOnSubmit = (event : React.FormEvent<HTMLFormElement>) => {
+	const handleOnSubmit = (event : React.SyntheticEvent) => {
 		event.preventDefault()
 
-		const formData= {};
+		const formData= new FormData();
 
-		Array.from(event.currentTarget.elements).forEach(field => {
-			if(!field.name) return;
-			formData[field.name] = field.value;
-		});
+		const target = event.target as typeof event.target & {
+			name: { value: string}
+			email: { value: string}
+			message: { value: string}
+		}
+		
+		const name = target.name.value;
+		const email = target.email.value;
+		const message = target.message.value;
+
+		formData.append("name",name)
+		formData.append("email",email)
+		formData.append("message",message)
 
 		fetch('/api/contact',{
 			method: 'POST',
