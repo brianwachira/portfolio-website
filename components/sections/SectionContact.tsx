@@ -1,36 +1,36 @@
 import React from "react";
 
 const SectionContact = () => {
-
-	const handleOnSubmit = (event : React.SyntheticEvent) => {
-		event.preventDefault()
-
-		const formData= new FormData();
+	const handleOnSubmit = (event: React.SyntheticEvent) => {
+		event.preventDefault();
 
 		const target = event.target as typeof event.target & {
-			name: { value: string}
-			email: { value: string}
-			message: { value: string}
-		}
-		
+			name: { value: string };
+			email: { value: string };
+			message: { value: string };
+		};
 		const name = target.name.value;
 		const email = target.email.value;
 		const message = target.message.value;
 
-		formData.append("name",name)
-		formData.append("email",email)
-		formData.append("message",message)
+		const payload = {
+			name,
+			email,
+			message,
+		};
 
-		fetch('/api/contact',{
-			method: 'POST',
-			body: JSON.stringify(formData)
-		}).then(response => response.json())
-		.then(data => {
-			alert('Thank you for getting in touch. I will get back')
-		}).catch((error) => {
-			alert(error)
+		fetch("/api/contact", {
+			method: "POST",
+			body: JSON.stringify(payload),
 		})
-	}
+			.then((response) => response.json())
+			.then((data) => {
+				alert("Thank you for getting in touch. I will get back");
+			})
+			.catch((error) => {
+				alert(error);
+			});
+	};
 	return (
 		<section
 			id="contact"
