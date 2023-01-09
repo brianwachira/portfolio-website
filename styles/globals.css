@@ -10,26 +10,31 @@ html {
 @font-face {
   font-family: 'SPARTAN-REGULAR';
   src: url("/fonts/Spartan-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SPARTAN-MEDIUM';
   src: url("/fonts/Spartan-Medium.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SPARTAN-SEMIBOLD';
   src: url("/fonts/Spartan-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SPARTAN-BOLD';
   src: url("/fonts/Spartan-Bold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SPARTAN-EXTRABOLD';
   src: url("/fonts/Spartan-ExtraBold.ttf");
+  font-display: swap;
 }
 
 .stroke-text{
