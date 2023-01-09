@@ -13,7 +13,15 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Hi, I am Brian Wachira</title>
+				<meta property="title" content="Hi, I am Brian Wachira"/>
+				<meta property="og:title" content="Hi, I am Brian Wachira"/>
+				<meta property="twitter:title" content="Hi, I am Brian Wachira"/>
 				<meta name="description" content="I build for the world" />
+				<meta name="og:description" content="I build for the world" />
+				<meta name="twitter:description" content="I build for the world" />
+				<meta property="image" content="/images/code@3x.png"/>
+				<meta property="og:image" content="/images/code@3x.png"/>
+				<meta property="twitter:image" content="/images/code@3x.png"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
