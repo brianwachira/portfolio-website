@@ -9,7 +9,7 @@ My portfolio website built using NextJS & majorly TailwindCSS
 - SendGrid - [https://sendgrid.com/](https://sendgrid.com/)
 
 # Design
-- I followed design inspiration from [Akhil T J Portfolio Mockup Design](https://www.figma.com/community/file/1006095821656678611)
+- I followed design inspiration from [Akhil T J Portfolio Mockup Design <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" />](https://www.figma.com/community/file/1006095821656678611) 
 
 # Contributing
 Contributions are always welcome!
