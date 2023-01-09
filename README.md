@@ -8,6 +8,9 @@ My portfolio website built using NextJS & majorly TailwindCSS
 - SwiperJS - [https://swiperjs.com/](https://swiperjs.com/)
 - SendGrid - [https://sendgrid.com/](https://sendgrid.com/)
 
+# Design
+- I followed design inspiration from [Akhil T J Portfolio Mockup Design](https://www.figma.com/community/file/1006095821656678611)
+
 # Contributing
 Contributions are always welcome!
 
