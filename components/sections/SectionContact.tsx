@@ -89,7 +89,7 @@ const SectionContact = () => {
 								required
 							/>
 							<label
-								htmlFor="email"
+								htmlFor="message"
 								className="absolute  text-base lg:text-xl text-pw-grey font-spartanRegular duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-pw-orange peer-focus:dark:text-pw-orange peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
 							>
 								Message

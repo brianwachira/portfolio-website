@@ -62,6 +62,8 @@ const SectionSkills = () => {
 													<img
 														src={item.icon}
 														className="w-10 h-10 mx-auto mb-2 animate-pulse"
+														alt={item.name}
+														loading="lazy"
 													/>
 													<h3 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center">
 														{item.name}
@@ -72,6 +74,7 @@ const SectionSkills = () => {
 															"absolute inset-0 rounded-md",
 															"ring-pw-orange focus:z-10 focus:outline-none focus:ring-2"
 														)}
+														aria-label={item.name}
 													/>
 												</div>
 											))}
@@ -87,12 +90,14 @@ const SectionSkills = () => {
 						src="/images/net-bg.svg"
 						alt="net-bg"
 						className="animate-pulse  ml-auto -top-9 right-0 xl:-right-9 absolute"
+						loading="lazy"
 					/>
 					<div className="relative grayscale">
 						<img
 							className="max-w-xs lg:max-w-sm xl:max-w-md md:h-[30vh] lg:h-[40vh] xl:h-[70vh] xl:ml-auto"
 							src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
 							alt="gif"
+							loading="lazy"
 						/>
 					</div>
 				</div>

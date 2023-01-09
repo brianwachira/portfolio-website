@@ -13,6 +13,7 @@ const BtnScroll = (props: IBtnScrollProps) => {
                     src="/icons/arrow-down-icon.svg"
                     alt="arrow-icon-down"
                     className="animate-pulse mr-2"
+					loading="lazy"
                 />
                 <span className=" text-xs font-spartanMedium text-pw-grey">
                     Scroll
@@ -23,6 +24,7 @@ const BtnScroll = (props: IBtnScrollProps) => {
 					src="/icons/arrow-down-blue-icon.svg"
 					alt="arrow-icon-down"
 					className="animate-pulse mr-2"
+					loading="lazy"
 				/>
 				<span className=" text-xs font-spartanMedium text-pw-blue">Scroll</span>
 			</div></>}

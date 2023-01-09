@@ -18,7 +18,7 @@ const Footer = () => {
 								target="_blank"
 								className="animate-pulse transition delay-150 duration-300 ease-in-out hover:scale-125"
 							>
-								<img src={profile.icon} alt={profile.name} className=" mr-4" />
+								<img src={profile.icon} alt={profile.name} className=" mr-4"  loading="lazy"/>
 							</Link>
 						))}
 					</div>
@@ -37,6 +37,7 @@ const Footer = () => {
 							src="/icons/figma-1.svg"
 							alt=""
 							className="w-5 h-5 animate-pulse inline-flex"
+							loading="lazy"
 						/>
 					</span>
 				</div>

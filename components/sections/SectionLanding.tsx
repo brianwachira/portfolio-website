@@ -21,7 +21,7 @@ const SectionLanding = () => {
 							target="_blank"
 							className="transition delay-150 duration-300 ease-in-out hover:scale-125"
 						>
-							<img src={profile.icon} alt={profile.name} className=" mr-4" />
+							<img src={profile.icon} alt={profile.name} className=" mr-4"   loading="lazy"/>
 						</Link>
 					))}
 				</div>
