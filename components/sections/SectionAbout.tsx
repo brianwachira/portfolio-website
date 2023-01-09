@@ -14,12 +14,14 @@ const SectionAbout = () => {
 						src="/images/net-bg.svg"
 						alt="net-bg"
 						className="animate-pulse -top-9 absolute"
+						loading="lazy"
 					/>
 					<div className="relative grayscale">
 						<img
 							className="max-w-xs mx-auto lg:max-w-sm xl:max-w-md md:h-[30vh] lg:h-[40vh] xl:h-[70vh] lg:ml-auto xl:ml-9"
 							src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03fdb466-60c7-4df2-8aeb-8f9f008d2afa/db8o23g-c69fffc4-ad01-4d0a-8add-832de1a26de7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZmRiNDY2LTYwYzctNGRmMi04YWViLThmOWYwMDhkMmFmYVwvZGI4bzIzZy1jNjlmZmZjNC1hZDAxLTRkMGEtOGFkZC04MzJkZTFhMjZkZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u2KXFJm5O_QWDqHAScT-QTWe_pwrUaCubl4UMxl1Gw0"
 							alt="gif"
+							loading="lazy"
 						/>
 					</div>
 				</div>
