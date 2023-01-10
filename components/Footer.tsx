@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { SocialMediaProfile } from "../constants/SocialMediaProfile";
+import { socialMediaProfileContent } from "../constants";
+import SocialMediaButton from "./SocialMediaButton";
 
 const Footer = () => {
 	const year = new Date().getFullYear();
@@ -11,15 +12,8 @@ const Footer = () => {
 				</h1>
 				<div className="flex justify-center mb-5">
 					<div className="inline-flex">
-						{SocialMediaProfile.map((profile) => (
-							<Link
-								key={profile.name}
-								href={profile.href}
-								target="_blank"
-								className="animate-pulse transition delay-150 duration-300 ease-in-out hover:scale-125"
-							>
-								<img src={profile.icon} alt={profile.name} className=" mr-4"  loading="lazy"/>
-							</Link>
+						{socialMediaProfileContent.map((item) => (
+							<SocialMediaButton item={item} key={item.name} />
 						))}
 					</div>
 				</div>
@@ -42,17 +36,16 @@ const Footer = () => {
 					</span>
 				</div>
 				<div className="flex items-center justify-center mt-5">
-				<h2 className=" text-white text-sm font-spartanMedium text-center">
-					All Rights Reserved © {year}
-				</h2>
-				<Link
-					href={"/privacypolicy"}
-					target="_blank"
-					className=" inline-flex text-xs font-spartanBold  text-pw-orange ml-5"
-				>
-					Privacy Policy
-				</Link>
-					
+					<h2 className=" text-white text-sm font-spartanMedium text-center">
+						All Rights Reserved © {year}
+					</h2>
+					<Link
+						href={"/privacypolicy"}
+						target="_blank"
+						className=" inline-flex text-xs font-spartanBold  text-pw-orange ml-5"
+					>
+						Privacy Policy
+					</Link>
 				</div>
 			</main>
 		</footer>
