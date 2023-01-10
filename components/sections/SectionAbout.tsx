@@ -1,6 +1,8 @@
 import BtnScroll from "../shared-ui/BtnScroll";
+import { aboutContent } from "../../constants";
 
 const SectionAbout = () => {
+	const { title, description } = aboutContent;
 	return (
 		<section
 			id="about"
@@ -27,14 +29,10 @@ const SectionAbout = () => {
 				</div>
 				<div className="grid self-center mb-14 md:order-2">
 					<h1 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mb-4 xl:mb-8 text-center md:text-left">
-						About Me.
+						{title}
 					</h1>
 					<p className="text-pw-grey lg:text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 md:py-0 md:pl-0 lg:pr-0 text-center md:text-left">
-						With a passion for technology and a focus on continuous learning, I
-						am a software engineer with expertise in JavaScript and a
-						willingness to explore new technologies. I am a proactive
-						problem-solver and enjoy working on complex projects that require me
-						to think creatively and outside the box.
+						{description}
 					</p>
 				</div>
 			</div>
