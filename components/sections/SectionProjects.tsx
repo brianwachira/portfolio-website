@@ -59,12 +59,12 @@ const SectionProjects = () => {
 							</div>
 							<div className="grid">
 								<div className="grid self-center">
-									<h2 className="hidden lg:block text-pw-orange font-spartanBold text-2xl lg:text-3xl mb-3 lg:mb-6 text-center lg:text-left">
+									<h1 className="hidden lg:block text-pw-orange font-spartanBold text-2xl lg:text-3xl mb-3 lg:mb-6 text-center lg:text-left">
 										{title}
-									</h2>
-									<h3 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center md:text-left">
+									</h1>
+									<h2 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center md:text-left">
 										{project.title}
-									</h3>
+									</h2>
 									<p className="text-pw-blue font-spartanRegular text-base lg:text-2xl mb-3 lg:mb-6 text-center md:text-left">
 										{project.description}
 									</p>
@@ -72,7 +72,7 @@ const SectionProjects = () => {
 										{project.techStack.map((stack) => (
 											<span
 												key={stack.id}
-												className="cursor-pointer py-2 px-3 bg-pw-grey text-sm font-spartanMedium text-white rounded mr-4 transition delay-150 duration-300 ease-in-out hover:bg-pw-orange mb-3 lg:mb-0"
+												className="cursor-pointer py-2 px-3 bg-pw-grey text-sm font-spartanSemiBold text-white rounded mr-4 transition delay-150 duration-300 ease-in-out hover:bg-pw-orange mb-3 lg:mb-0"
 											>
 												{stack.stack}
 											</span>

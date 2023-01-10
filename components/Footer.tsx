@@ -42,9 +42,9 @@ const Footer = () => {
 					</span>
 				</div>
 				<div className="flex items-center justify-center mt-5">
-				<h5 className=" text-white text-sm font-spartanMedium text-center">
+				<h2 className=" text-white text-sm font-spartanMedium text-center">
 					All Rights Reserved © {year}
-				</h5>
+				</h2>
 				<Link
 					href={"/privacypolicy"}
 					target="_blank"
