@@ -39,15 +39,15 @@ const SectionContact = () => {
 			<main className="bg-white container md:mx-auto grid rounded">
 				<div className="p-4 lg:p-9 grid lg:grid-cols-2 gap-x-14">
 					<div className="grid self-center">
-						<h5 className=" font-spartanSemiBold text-pw-blue text-2xl lg:text-4xl mb-2 lg:mb-0 text-center lg:text-left">
+						<h1 className=" font-spartanSemiBold text-pw-blue text-2xl lg:text-4xl mb-2 lg:mb-0 text-center lg:text-left">
 							Drop me a message,
 							<br />I would love to hear from you!
-						</h5>
+						</h1>
 					</div>
 					<form method="post" onSubmit={handleOnSubmit} className="space-y-6">
-						<h5 className=" font-spartanBold text-pw-orange text-2xl xl:text-3xl mb-4 xl:mb-8 text-center lg:text-left">
+						<h2 className=" font-spartanBold text-pw-orange text-2xl xl:text-3xl mb-4 xl:mb-8 text-center lg:text-left">
 							Get in touch
-						</h5>
+						</h2>
 						<div className="relative">
 							<input
 								type="text"

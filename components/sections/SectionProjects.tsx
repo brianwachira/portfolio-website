@@ -22,9 +22,9 @@ const SectionProjects = () => {
 		>
 			<main className="container md:mx-auto grid lg:min-h-screen px-4 py-4 md:px-0 md:py-10 xl:py-20 lg:px-20">
 				<div className="grid self-start" />
-				<h5 className="lg:hidden text-pw-orange font-spartanBold text-2xl lg:text-3xl lg:mb-6 text-center md:text-left md:px-4">
+				<h1 className="lg:hidden text-pw-orange font-spartanBold text-2xl lg:text-3xl lg:mb-6 text-center md:text-left md:px-4">
 					{title}
-				</h5>
+				</h1>
 				<Swiper
 					slidesPerView={"auto"}
 					autoplay={{
@@ -59,12 +59,12 @@ const SectionProjects = () => {
 							</div>
 							<div className="grid">
 								<div className="grid self-center">
-									<h5 className="hidden lg:block text-pw-orange font-spartanBold text-2xl lg:text-3xl mb-3 lg:mb-6 text-center lg:text-left">
+									<h2 className="hidden lg:block text-pw-orange font-spartanBold text-2xl lg:text-3xl mb-3 lg:mb-6 text-center lg:text-left">
 										{title}
-									</h5>
-									<h5 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center md:text-left">
+									</h2>
+									<h3 className=" text-pw-orange font-spartanSemiBold text-xl my-3 lg:text-2xl lg:mb-6 text-center md:text-left">
 										{project.title}
-									</h5>
+									</h3>
 									<p className="text-pw-blue font-spartanRegular text-base lg:text-2xl mb-3 lg:mb-6 text-center md:text-left">
 										{project.description}
 									</p>
@@ -99,6 +99,7 @@ const SectionProjects = () => {
 											className={`${
 												project.websiteLink.length < 1 && "hidden"
 											} "transition delay-150 duration-300 ease-in-out hover:scale-125"`}
+											aria-label="globe icon link"
 										>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
@@ -107,6 +108,7 @@ const SectionProjects = () => {
 												strokeWidth={1.5}
 												stroke="currentColor"
 												className="text-pw-grey w-[37px] h-[37px] mr-4"
+												aria-label="globe icon"
 											>
 												<path
 													strokeLinecap="round"

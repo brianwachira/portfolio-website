@@ -17,9 +17,9 @@ const SectionSkills = () => {
 			<div className="grid lg:grid-cols-2 gap-x-14">
 				<div className="md:grid md:grid-cols-2 md:gap-x-4 lg:block">
 					<div className="md:grid md:self-start lg:self-start">
-						<h5 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mx-4 md:mx-0 xl:mb-8 text-center md:text-left">
+						<h1 className="text-pw-orange font-spartanBold text-2xl xl:text-3xl mx-4 md:mx-0 xl:mb-8 text-center md:text-left">
 							{title}
-						</h5>
+						</h1>
 						<p className="text-pw-blue font-spartanRegular text-base xl:text-2xl px-4 md:px-0 text-center md:text-left">
 							{description}
 						</p>
@@ -65,9 +65,9 @@ const SectionSkills = () => {
 														alt={item.name}
 														loading="lazy"
 													/>
-													<h3 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center">
+													<h2 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center">
 														{item.name}
-													</h3>
+													</h2>
 													<a
 														href="#"
 														className={classNames(
