@@ -9,12 +9,12 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-import { ProjectsContent } from "../../constants/ProjectsContent";
+import { projectsContent } from "../../constants";
 import Link from "next/link";
 import BtnScroll from "../shared-ui/BtnScroll";
 
 const SectionProjects = () => {
-	const { title, projects } = ProjectsContent;
+	const { title, projects } = projectsContent;
 	return (
 		<section
 			id="projects"
