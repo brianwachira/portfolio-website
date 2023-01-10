@@ -6,9 +6,9 @@ const Footer = () => {
 	return (
 		<footer className=" bg-pw-blue">
 			<main className="lg:bg-[url('/images/footer-bg.svg')] bg-right bg-contain bg-no-repeat px-5 pt-5 lg:pt-10 pb-5">
-				<h5 className=" text-white text-sm font-spartanMedium text-center mb-5">
+				<h1 className=" text-white text-sm font-spartanMedium text-center mb-5">
 					Find me on social media....
-				</h5>
+				</h1>
 				<div className="flex justify-center mb-5">
 					<div className="inline-flex">
 						{SocialMediaProfile.map((profile) => (

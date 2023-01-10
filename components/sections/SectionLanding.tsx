@@ -7,12 +7,12 @@ const SectionLanding = () => {
 		<div className="container md:mx-auto grid h-[calc(100vh)] mt-28">
 			<div className="grid self-start"></div>
 			<div className="mx-auto grid-self-center mt-36 lg:px-20 container">
-				<h3 className=" font-spartanExtraBold text-4xl stroke-text text-center lg:text-left">
+				<h1 className=" font-spartanExtraBold text-4xl stroke-text text-center lg:text-left">
 					Brian Wachira
-				</h3>
-				<h5 className="font-spartanSemiBold text-2xl text-white my-4 text-center lg:text-left">
+				</h1>
+				<h2 className="font-spartanSemiBold text-2xl text-white my-4 text-center lg:text-left">
 					Software Engineer
-				</h5>
+				</h2>
 				<div className="flex justify-center lg:justify-start">
 					{SocialMediaProfile.map((profile) => (
 						<Link
