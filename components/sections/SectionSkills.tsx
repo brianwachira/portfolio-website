@@ -1,13 +1,14 @@
 import { Tab } from "@headlessui/react";
-import { SkillsContent } from "../../constants/SkillsContent";
+import { skillsContent } from "../../constants";
 import BtnScroll from "../shared-ui/BtnScroll";
+import SkillsPill from "../SkillsPill";
 
 const SectionSkills = () => {
 	const classNames = (...classes: any[]) => {
 		return classes.filter(Boolean).join(" ");
 	};
 
-	const { title, description, expertise } = SkillsContent;
+	const { title, description, expertise } = skillsContent;
 
 	return (
 		<section
@@ -55,28 +56,7 @@ const SectionSkills = () => {
 									>
 										<div className="flex flex-wrap">
 											{category.skills.map((item) => (
-												<div
-													key={item.id}
-													className="relative rounded p-3 hover:bg-gray-100"
-												>
-													<img
-														src={item.icon}
-														className="w-10 h-10 mx-auto mb-2 animate-pulse"
-														alt={item.name}
-														loading="lazy"
-													/>
-													<h2 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center">
-														{item.name}
-													</h2>
-													<a
-														href="#"
-														className={classNames(
-															"absolute inset-0 rounded-md",
-															"ring-pw-orange focus:z-10 focus:outline-none focus:ring-2"
-														)}
-														aria-label={item.name}
-													/>
-												</div>
+												<SkillsPill item={item} key={item.id} />
 											))}
 										</div>
 									</Tab.Panel>
