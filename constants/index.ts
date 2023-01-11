@@ -19,6 +19,11 @@ export const experienceContent = {
             startDate: 'Feb 2022',
             endDate: null,
             currentWorkplace: true,
+            techStack: [{ id: '4.1', title: 'VueJS' }, { id: '4.2', title: 'ReactJS' }, { id: '4.3', title: 'NextJS' }, { id: '4.4', title: 'TailwindCSS' }, { id: '4.5', title: 'StrapiCMS' }],
+            summary: `
+#### Achievements so far 
+- Being the founding UI engineer, I have laid out development structures and tooling for the incoming front-end team members
+- Built developer resources portal as the company taps into the developer market.`
         },
         {
             id: 3,
@@ -27,6 +32,14 @@ export const experienceContent = {
             startDate: 'Nov 2022',
             endDate: null,
             currentWorkplace: true,
+            techStack: [{ id: '3.1', title: 'Expo' }, { id: '3.2', title: 'SignalR' }, { id: '3.3', title: 'Typescript' }, { id: '3.4', title: 'Sentry' }],
+            summary: `
+#### Impact
+- Came up with IOS design guidelines for an existing android mobile application using Figma.  
+- Translated the design into a mobile app using Expo (React Native) and Typescript.  
+- Ensured feature efficiency through testing and refactoring of components used using testing library ( React Native ).  
+- Ensured the app is production ready by tracking early production bugs using  Sentry Error tracking and monitoring tool.`
+
         },
         {
             id: 2,
@@ -35,6 +48,12 @@ export const experienceContent = {
             startDate: 'May 2021',
             endDate: 'Sep 2021',
             currentWorkplace: false,
+            techStack: [{ id: '2.1', title: 'NextJS' }, { id: '2.2', title: 'Styled Components' }, { id: '2.3', title: 'CraftCMS' }, { id: '2.4', title: 'StrapiCMS' }],
+            summary: `
+#### Impact
+- Successfully pitched and transitioned company tech stack into modern ones`
+
+
         },
         {
             id: 1,
@@ -43,6 +62,15 @@ export const experienceContent = {
             startDate: 'Sep 2019',
             endDate: 'Feb 2021',
             currentWorkplace: false,
+            techStack: [{ id: '1.1', title: 'VueJS' }, { id: '1.2', title: 'NuxtJS' }, { id: '1.3', title: 'OctoberCMS' }, { id: '1.4', title: 'LeafletJS  MapBox API' }, { id: '1.5', title: 'ChartJS' }],
+            summary: `
+#### Impact
+- Transformed website design mock-ups for a gaming progressive web app, to be used by an estimated 5000+ users daily.
+- Reduced website page load from > 10 seconds to ~5 seconds.
+-  Implemented SEO - increasing traffic by 10% and analytics by 40%
+#### Lessons Learnt
+- Negotiating for realistic deadlines.`
+
         },
     ]
 }
@@ -54,7 +82,7 @@ export const projectsContent = {
             id: 1,
             title: 'droidconKE2022ReactNative',
             description: 'React Native App for the 3rd Android Developer Conference in Kenya - droidcon to be held in Nairobi from November 16-18th 2022.',
-            techStack : [
+            techStack: [
                 {
                     id: 2,
                     stack: 'Expo ( React Native )'
@@ -73,7 +101,7 @@ export const projectsContent = {
             image: 'images/droidconkereactnative.jpeg'
         },
     ]
-} 
+}
 
 export const skillsContent = {
     title: 'Skills.',
