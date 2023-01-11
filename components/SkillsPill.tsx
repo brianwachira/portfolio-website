@@ -21,7 +21,7 @@ const SkillsPill = (props: ISkillsPillProps) => {
 				alt={item.name}
 				loading="lazy"
 			/>
-			<h2 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center">
+			<h2 className="text-xs lg:text-sm font-spartanSemiBold text-pw-blue text-center max-w-[8rem]">
 				{item.name}
 			</h2>
 			<a

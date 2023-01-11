@@ -172,15 +172,36 @@ export const skillsContent = {
         },
         {
             id: 18,
-            name: 'UI Design',
+            name: 'Testing',
             skills: [
                 {
                     id: 19,
+                    name: 'Testing Library ( React / React Native)',
+                    icon: '/icons/testing-library.png'
+                },
+                {
+                    id: 21,
+                    name: 'Cypress',
+                    icon: '/icons/cypress.svg'
+                },
+                {
+                    id: 20,
+                    name: 'Jest',
+                    icon: '/icons/jest.svg'
+                },
+            ]
+        },
+        {
+            id: 22,
+            name: 'UI Design',
+            skills: [
+                {
+                    id: 23,
                     name: 'Figma',
                     icon: '/icons/figma-1.svg'
                 },
                 {
-                    id: 20,
+                    id: 24,
                     name: 'Adobe XD',
                     icon: '/icons/adobe-xd-2.svg'
                 }
