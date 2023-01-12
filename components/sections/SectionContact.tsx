@@ -5,7 +5,9 @@ const SectionContact = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 
-	const toggleLoading = () => setIsLoading(!isLoading);
+	const startLoading = () => setIsLoading(true);
+
+	const stopLoading = () => setIsLoading(false);
 
 	function closeModal() {
 		setIsOpen(false);
@@ -34,7 +36,7 @@ const SectionContact = () => {
 		};
 
 		// set loading as true.
-		toggleLoading();
+		startLoading();
 
 		fetch("/api/contact", {
 			method: "POST",
@@ -45,7 +47,7 @@ const SectionContact = () => {
 				openModal();
 
 				// Set loading as false.
-				toggleLoading();
+				stopLoading();
 
 				// reset values
 				target.name.value= ""
@@ -56,7 +58,7 @@ const SectionContact = () => {
 				alert(error);
 
 				// Set loading as false.
-				toggleLoading();
+				stopLoading();
 			});
 	};
 	return (
