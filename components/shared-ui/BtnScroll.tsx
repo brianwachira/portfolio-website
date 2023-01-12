@@ -12,7 +12,7 @@ const BtnScroll = (props: IBtnScrollProps) => {
 						<img
 							src="/icons/arrow-down-icon.svg"
 							alt="arrow-icon-down"
-							className="animate-pulse mr-2"
+							className="animate-bounce mr-2"
 							loading="lazy"
 						/>
 						<span className=" text-xs font-spartanMedium text-pw-grey">
@@ -26,7 +26,7 @@ const BtnScroll = (props: IBtnScrollProps) => {
 						<img
 							src="/icons/arrow-down-blue-icon.svg"
 							alt="arrow-icon-down"
-							className="animate-pulse mr-2"
+							className="animate-bounce mr-2"
 							loading="lazy"
 						/>
 						<span className=" text-xs font-spartanMedium text-pw-blue">

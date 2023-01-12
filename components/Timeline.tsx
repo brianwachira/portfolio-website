@@ -73,7 +73,7 @@ const Timeline = (props: ITimelineProps) => {
 									alt="arrow-icon-down"
 									className={`${
 										open ? "rotate-180 transform" : ""
-									}"animate-pulse"`}
+									}"animate-bounce"`}
 									loading="lazy"
 								/>
 							</div>
