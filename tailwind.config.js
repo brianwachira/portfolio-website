@@ -17,6 +17,9 @@ module.exports = {
         'pw-blue': '#000C24',
         'pw-light': '#FBFBFB',
         'pw-orange': '#F44336',
+        'pw-orange-100': '#FFE3E1',
+        'pw-orange-200': '#FFCCC8',
+        'pw-orange-500': '#F44336',
         'pw-grey': '#928A97'
       }
     },
