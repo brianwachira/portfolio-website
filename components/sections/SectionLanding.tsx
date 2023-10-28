@@ -6,7 +6,7 @@ import SocialMediaButton from "../SocialMediaButton";
 const SectionLanding = () => {
 	const { title, description } = landingPageContent;
 	return (
-		<div className="container md:mx-auto grid h-[calc(100vh)] mt-28">
+		<div id="home" className="container md:mx-auto grid h-[calc(100vh)] mt-28">
 			<div className="grid self-start"></div>
 			<div className="mx-auto grid-self-center mt-36 lg:px-20 container">
 				<h1 className=" font-spartanExtraBold text-4xl stroke-text text-center lg:text-left">
