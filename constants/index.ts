@@ -19,7 +19,7 @@ export const experienceContent = {
             startDate: 'Feb 2022',
             endDate: null,
             currentWorkplace: true,
-            techStack: [{ id: '4.1', title: 'VueJS' }, { id: '4.2', title: 'ReactJS' }, { id: '4.3', title: 'NextJS' }, { id: '4.4', title: 'TailwindCSS' }, { id: '4.5', title: 'StrapiCMS' }],
+            techStack: [{ id: '4.1', title: 'VueJS' }, { id: '4.2', title: 'ReactJS' }, { id: '4.3', title: 'NextJS' }, { id: '4.4', title: 'TailwindCSS' }, { id: '4.5', title: 'StrapiCMS' }, { id: '4.6', title: 'Supabase' }, { id: '4.7', title: 'Turborepo (Monorepo)' }],
             summary: `
 #### Achievements so far 
 - Being the founding UI engineer, I have laid out development structures and tooling for the incoming front-end team members
