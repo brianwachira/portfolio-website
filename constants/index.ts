@@ -9,7 +9,7 @@ export const aboutContent = {
 }
 
 export const experienceContent = {
-    title: 'Over 2 years experience.',
+    title: 'Over 3 years experience.',
     description: '',
     timeline: [
         {
