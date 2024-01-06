@@ -140,8 +140,8 @@ export const projectsContent = {
                     stack: 'React Testing Library'
                 }
             ],
-            websiteLink: '#',
-            githubLink: '#',
+            websiteLink: '',
+            githubLink: '',
             image: 'images/droidconkereactnative.jpeg'
         },
         {
@@ -158,8 +158,8 @@ export const projectsContent = {
                     stack: 'React Testing Library'
                 }
             ],
-            websiteLink: '#',
-            githubLink: '#',
+            websiteLink: '',
+            githubLink: '',
             image: 'images/droidconkereactnative.jpeg'
         },{
             id: 5,
@@ -179,8 +179,8 @@ export const projectsContent = {
                     stack: 'Typescript'
                 }
             ],
-            websiteLink: '#',
-            githubLink: '#',
+            websiteLink: '',
+            githubLink: '',
             image: 'images/droidconkereactnative.jpeg'
         }
     ]
