@@ -14,6 +14,21 @@ export const experienceContent = {
     timeline: [
         {
             id: 4,
+            title: 'Open source Project Lead ( React Native )',
+            company: 'DroidconKE, Nairobi',
+            startDate: 'Sep 2022',
+            endDate: null,
+            currentWorkplace: true,
+            techStack: [{ id: '4.11', title: 'Expo ( React Native )' }, { id: '4.22', title: 'Typescript' }, { id: '4.33', title: 'Storybook' }, { id: '4.44', title: 'Redux ToolKit' }, { id: '4.55', title: 'RTKQuery' }, { id: '4.66', title: 'Sentry' }, { id: '4.77', title: 'React Query' }, { id: '4.88', title: 'React Native Testing Library' }],
+            summary: `
+#### Achievements so far 
+- Led ReactDevs community in Kenya in developing the open-source DroidconKE 2022 - 2023 Events App. This included setting up the project structure ( unit testing flow, DevOps integration flow, API integration flow )
+-   Mentored junior developers through code reviews, ensuring project standards are met.
+- [Link to 2023 app](https://bit.ly/3G85qmV)
+- [Link to 2022 app](https://bit.ly/3V0c9oN)`
+        },
+        {
+            id: 4,
             title: 'Software Developer',
             company: 'Olive Tree Media Limited, Nairobi',
             startDate: 'Feb 2022',
