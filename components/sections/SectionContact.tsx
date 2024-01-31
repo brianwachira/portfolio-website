@@ -96,7 +96,7 @@ const SectionContact = () => {
 						</div>
 						<div className="relative">
 							<input
-								type="text"
+								type="email"
 								id="email"
 								name="email"
 								className="block px-2.5 py-2.5 w-full text-base lg:text-xl text-pw-blue bg-transparent rounded border border-pw-blue appearance-none focus:outline-none focus:ring-0 focus:border-pw-orange peer"
