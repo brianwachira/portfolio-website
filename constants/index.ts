@@ -19,11 +19,11 @@ export const experienceContent = {
             startDate: 'June 2024',
             endDate: 'Oct 2024',
             currentWorkplace: false,
-            techStack: [{ id: '4.111', title: 'Expo ( React Native )' }, { id: '4.222', title: 'Zustand' }],
+            techStack: [{ id: '4.132', title: 'Expo ( React Native )' }, { id: '4.232', title: 'Typescript' }, {id: '4.332', title: 'SQLite'},{id: '4.442', title: 'Bluetooth'}],
             summary: `
 #### Achievements
 - Developed an  offline-first  mobile app for iOS and Android platforms using React Native, Typescript  and  Expo SQLite, enabling users to participate in surveys in remote areas using SurveyJS running through Webviews and share offline responses via Bluetooth
-- [Link to the app on Android](https://play.google.com/store/apps/details?id=com.openinstitute.sabasi)
+- [Link to the app on Android](https://play.google.com/store/apps/details?id=com.openinstitute.sabasi)`
         },
         {
             id: 4,
@@ -32,8 +32,8 @@ export const experienceContent = {
             startDate: 'Mar 2024',
             endDate: null,
             currentWorkplace: true,
-            techStack: [{ id: '4.111', title: 'Expo ( React Native )' }, { id: '4.222', title: 'Zustand' }],
-                               summary: `
+            techStack: [{ id: '4.19991', title: 'Expo ( React Native )' }, { id: '4.2992', title: 'Zustand' }],
+            summary: `
 #### Achievements so far 
 - Led ReactDevs Kenya's open-source community to create an Events App for Rendercon Kenya using React Native and Zustand, boosting community engagement by 80%.
 - [Link to the app on IOS](https://apps.apple.com/ke/app/renderconke/id6720706528)
