@@ -14,6 +14,46 @@ export const experienceContent = {
     timeline: [
         {
             id: 4,
+            title: 'Senior Mobile Engineer',
+            company: 'The Open Institute Africa, Nairobi',
+            startDate: 'June 2024',
+            endDate: 'Oct 2024',
+            currentWorkplace: false,
+            techStack: [{ id: '4.111', title: 'Expo ( React Native )' }, { id: '4.222', title: 'Zustand' }],
+            summary: `
+#### Achievements
+- Developed an  offline-first  mobile app for iOS and Android platforms using React Native, Typescript  and  Expo SQLite, enabling users to participate in surveys in remote areas using SurveyJS running through Webviews and share offline responses via Bluetooth
+- [Link to the app on Android](https://play.google.com/store/apps/details?id=com.openinstitute.sabasi)
+        },
+        {
+            id: 4,
+            title: 'Open source Project Lead ( React Native )',
+            company: 'Rendercon Kenya, Nairobi',
+            startDate: 'Mar 2024',
+            endDate: null,
+            currentWorkplace: true,
+            techStack: [{ id: '4.111', title: 'Expo ( React Native )' }, { id: '4.222', title: 'Zustand' }],
+                               summary: `
+#### Achievements so far 
+- Led ReactDevs Kenya's open-source community to create an Events App for Rendercon Kenya using React Native and Zustand, boosting community engagement by 80%.
+- [Link to the app on IOS](https://apps.apple.com/ke/app/renderconke/id6720706528)
+- [Link to the app on Android](https://play.google.com/store/apps/details?id=com.renderconke.RenderConKe&hl=en)`
+        },
+        {
+            id: 4,
+            title: 'Software Engineer ( Mobile & Web )',
+            company: 'Metrixx Technologies, Nairobi',
+            startDate: 'Mar 2023',
+            endDate: 'Dec 2023',
+            currentWorkplace: false,
+            techStack: [{ id: '4.111', title: 'Expo ( React Native )' }, { id: '4.222', title: 'NextJS' }, { id: '4.333', title: 'Typescript' }, { id: '4.444', title: 'NodeJS' }],
+    summary: `
+#### Achievements so far 
+- Developed a platform for pharmaceuticals to boost sales rep management using React Native, NextJS, Typescript and NodeJS, achieving 80% sales efficiency.
+- [Link to the app](https://bit.ly/48euG6K)`
+        },
+        {
+            id: 4,
             title: 'Open source Project Lead ( React Native )',
             company: 'DroidconKE, Nairobi',
             startDate: 'Sep 2022',
