@@ -24,3 +24,4 @@ export const Routes = [
         href: "#contact"
     }
 ]
+export const RouteItems = ['home', 'about', 'experience', 'skills', 'projects', 'contact']

@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState } from "react";
-import { Routes } from "../constants/Routes";
+import { RouteItems, Routes } from "../constants/Routes";
 import useScrollPosition from "../hooks/useScrollPosition";
-import Scrollspy from 'react-scrollspy'
+import Scrollspy from "react-scrollspy";
+
 
 const NavBar = () => {
-
 	const scrollPosition = useScrollPosition();
 
 	const [navIsOpen, setNavIsOpen] = useState(false);
@@ -51,29 +50,26 @@ const NavBar = () => {
 					} items-center justify-between  w-full md:flex md:w-auto md:order-1`}
 					id="navbar-sticky"
 				>
-					<ul >
-						<Scrollspy 
-						className="lg:px-12  items-center text-pw-grey flex flex-col mt-4 rounded-lg md:flex-row md:space-x-4 md:mt-0 "
-						items={['home', 'about', 'experience', 'skills', 'projects', 'contact']}
-						currentClassName=" md:bg-[url('/images/linkActiveBackground.svg')] md:bg-cover md:animate-pulse md:w-40 md:h-28 md:bg-center md:text-center md:align-middle md:bg-no-repeat  z-10 grid py-2 lg:pl-3 lg:pr-4 grid items-center  lg:-ml-6 text-pw-orange text-lg font-spartanMedium"
-						scrolledPastClassName= "block py-2 lg:pl-3 lg:pr-4 text-pw-grey text-lg font-medium font-spartanMedium rounded md:bg-transparent md:p-0"
-						>
+					<Scrollspy
+						className="lg:pl-16  items-center text-pw-grey flex flex-col mt-4 rounded-lg md:flex-row md:space-x-14 md:mt-0 "
+						items={RouteItems}
+						currentClassName=" md:bg-[url('/images/linkActiveBackground.svg')] md:bg-cover md:animate-pulse md:w-40 md:h-28 md:bg-center md:text-center md:align-middle md:bg-no-repeat  z-10 grid py-2 lg:pl-3 lg:pr-4 items-center  lg:-ml-6 text-pw-orange text-lg font-spartanMedium"
+						scrolledPastClassName="block py-2 lg:pl-3 lg:pr-4 text-pw-grey text-lg font-medium font-spartanMedium rounded md:bg-transparent md:p-0"
+					>
 						{Routes.map((route) => (
-
 							<li key={route.href}>
-								<Link href={route.href}
-								 className="block py-2 md:pl-3 md:pr-4 text-lg font-medium font-spartanMedium rounded md:bg-transparent md:p-0"
-								aria-current="page"
+								<Link
+									href={route.href}
+									className="block py-2 md:pl-3 md:pr-4 text-lg font-medium font-spartanMedium rounded md:bg-transparent md:p-0"
+									aria-current="page"
 								>
-									<span className="">
-							{route.title}
-							 			</span>
+									<span className="grid self-center md:-ml-5  ">
+										{route.title}
+									</span>
 								</Link>
 							</li>
-							
 						))}
-						</Scrollspy>
-					</ul>
+					</Scrollspy>
 				</div>
 			</div>
 		</nav>
