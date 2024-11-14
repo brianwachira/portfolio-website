@@ -9,9 +9,64 @@ export const aboutContent = {
 }
 
 export const experienceContent = {
-    title: 'Over 2 years experience.',
+    title: 'Over 3 years experience.',
     description: '',
     timeline: [
+        {
+            id: 4,
+            title: 'Senior Mobile Engineer',
+            company: 'The Open Institute Africa, Nairobi',
+            startDate: 'June 2024',
+            endDate: 'Oct 2024',
+            currentWorkplace: false,
+            techStack: [{ id: '4.132', title: 'Expo ( React Native )' }, { id: '4.232', title: 'Typescript' }, {id: '4.332', title: 'SQLite'},{id: '4.442', title: 'Bluetooth'}],
+            summary: `
+#### Achievements
+- Developed an  offline-first  mobile app for iOS and Android platforms using React Native, Typescript  and  Expo SQLite, enabling users to participate in surveys in remote areas using SurveyJS running through Webviews and share offline responses via Bluetooth
+- [Link to the app on Android](https://play.google.com/store/apps/details?id=com.openinstitute.sabasi)`
+        },
+        {
+            id: 4,
+            title: 'Open source Project Lead ( React Native )',
+            company: 'Rendercon Kenya, Nairobi',
+            startDate: 'Mar 2024',
+            endDate: null,
+            currentWorkplace: true,
+            techStack: [{ id: '4.19991', title: 'Expo ( React Native )' }, { id: '4.2992', title: 'Zustand' }],
+            summary: `
+#### Achievements so far 
+- Led ReactDevs Kenya's open-source community to create an Events App for Rendercon Kenya using React Native and Zustand, boosting community engagement by 80%.
+- [Link to the app on IOS](https://apps.apple.com/ke/app/renderconke/id6720706528)
+- [Link to the app on Android](https://play.google.com/store/apps/details?id=com.renderconke.RenderConKe&hl=en)`
+        },
+        {
+            id: 4,
+            title: 'Software Engineer ( Mobile & Web )',
+            company: 'Metrixx Technologies, Nairobi',
+            startDate: 'Mar 2023',
+            endDate: 'Dec 2023',
+            currentWorkplace: false,
+            techStack: [{ id: '4.111', title: 'Expo ( React Native )' }, { id: '4.222', title: 'NextJS' }, { id: '4.333', title: 'Typescript' }, { id: '4.444', title: 'NodeJS' }],
+    summary: `
+#### Achievements so far 
+- Developed a platform for pharmaceuticals to boost sales rep management using React Native, NextJS, Typescript and NodeJS, achieving 80% sales efficiency.
+- [Link to the app](https://bit.ly/48euG6K)`
+        },
+        {
+            id: 4,
+            title: 'Open source Project Lead ( React Native )',
+            company: 'DroidconKE, Nairobi',
+            startDate: 'Sep 2022',
+            endDate: null,
+            currentWorkplace: true,
+            techStack: [{ id: '4.11', title: 'Expo ( React Native )' }, { id: '4.22', title: 'Typescript' }, { id: '4.33', title: 'Storybook' }, { id: '4.44', title: 'Redux ToolKit' }, { id: '4.55', title: 'RTKQuery' }, { id: '4.66', title: 'Sentry' }, { id: '4.77', title: 'React Query' }, { id: '4.88', title: 'React Native Testing Library' }],
+            summary: `
+#### Achievements so far 
+- Led ReactDevs community in Kenya in developing the open-source DroidconKE 2022 - 2023 Events App. This included setting up the project structure ( unit testing flow, DevOps integration flow, API integration flow )
+-   Mentored junior developers through code reviews, ensuring project standards are met.
+- [Link to 2023 app](https://bit.ly/3G85qmV)
+- [Link to 2022 app](https://bit.ly/3V0c9oN)`
+        },
         {
             id: 4,
             title: 'Software Developer',
@@ -19,7 +74,7 @@ export const experienceContent = {
             startDate: 'Feb 2022',
             endDate: null,
             currentWorkplace: true,
-            techStack: [{ id: '4.1', title: 'VueJS' }, { id: '4.2', title: 'ReactJS' }, { id: '4.3', title: 'NextJS' }, { id: '4.4', title: 'TailwindCSS' }, { id: '4.5', title: 'StrapiCMS' }],
+            techStack: [{ id: '4.1', title: 'VueJS' }, { id: '4.2', title: 'ReactJS' }, { id: '4.3', title: 'NextJS' }, { id: '4.4', title: 'TailwindCSS' }, { id: '4.5', title: 'StrapiCMS' }, { id: '4.6', title: 'Supabase' }, { id: '4.7', title: 'Turborepo (Monorepo)' }],
             summary: `
 #### Achievements so far 
 - Being the founding UI engineer, I have laid out development structures and tooling for the incoming front-end team members
@@ -80,6 +135,28 @@ export const projectsContent = {
     projects: [
         {
             id: 1,
+            title: 'droidconKE2023ReactNative',
+            description: 'React Native App for the 4th Android Developer Conference in Kenya - droidcon to be held in Nairobi from November 8th-10th 2023.',
+            techStack: [
+                {
+                    id: 2,
+                    stack: 'Expo ( React Native )'
+                },
+                {
+                    id: 3,
+                    stack: 'React Query'
+                },
+                {
+                    id: 4,
+                    stack: 'React Testing Library'
+                }
+            ],
+            websiteLink: 'https://play.google.com/store/apps/details?id=com.ke.droidcon.reactnative&hl=en&gl=US',
+            githubLink: 'https://github.com/droidconKE/droidconKE2023ReactNative',
+            image: 'images/droidconkereactnative.jpeg'
+        },
+        {
+            id: 2,
             title: 'droidconKE2022ReactNative',
             description: 'React Native App for the 3rd Android Developer Conference in Kenya - droidcon to be held in Nairobi from November 16-18th 2022.',
             techStack: [
@@ -99,7 +176,68 @@ export const projectsContent = {
             websiteLink: 'https://play.google.com/store/apps/details?id=com.brianwachira.droidconKE2022ReactNative&hl=en&gl=US',
             githubLink: 'https://github.com/droidconKE/droidconKE2022ReactNative',
             image: 'images/droidconkereactnative.jpeg'
+        }, 
+        {
+            id: 3,
+            title: 'Sales Reps App',
+            description: 'An app for managing sales reps in pharmaceutical companies',
+            techStack: [
+                {
+                    id: 2,
+                    stack: 'Expo ( React Native )'
+                },
+                {
+                    id: 3,
+                    stack: 'React Query'
+                },
+                {
+                    id: 4,
+                    stack: 'React Testing Library'
+                }
+            ],
+            websiteLink: '',
+            githubLink: '',
+            image: 'images/droidconkereactnative.jpeg'
         },
+        {
+            id: 4,
+            title: 'Restuarants App',
+            description: 'An app for ordering food from restuarants and managing the restuarants',
+            techStack: [
+                {
+                    id: 1,
+                    stack: 'React Native'
+                },
+                {
+                    id: 2,
+                    stack: 'React Testing Library'
+                }
+            ],
+            websiteLink: '',
+            githubLink: '',
+            image: 'images/droidconkereactnative.jpeg'
+        },{
+            id: 5,
+            title: 'Church App',
+            description: 'Coming up with IOS design guidelines for an existing android mobile application using Figma. Translating the design into a mobile app using Expo (React Native) and Typescript. Writing tests for the components used using testing library ( React Native ). Error tracking and monitoring using Sentry',
+            techStack: [
+                {
+                    id: 1,
+                    stack: 'React Native'
+                },
+                {
+                    id: 2,
+                    stack: 'Figma'
+                },
+                {
+                    id: 3,
+                    stack: 'Typescript'
+                }
+            ],
+            websiteLink: '',
+            githubLink: '',
+            image: 'images/droidconkereactnative.jpeg'
+        }
     ]
 }
 
