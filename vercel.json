@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "pages/api/xbox-restock.js": {
+      "experimentalTriggers": [{ "type": "schedule/v1beta" }],
+      "maxDuration": 60
+    }
+  },
+  "schedules": {
+    "xbox-restock": {
+      "schedule": "15 2 * * *",
+      "timezone": "Africa/Nairobi",
+      "function": "api/xbox-restock"
+    }
+  }
+}
